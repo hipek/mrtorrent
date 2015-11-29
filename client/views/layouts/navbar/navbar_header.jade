@@ -1,0 +1,9 @@
+template(name='navbarHeader')
+  .navbar-header
+    button.navbar-toggle(type='button' data-toggle="collapse" data-target=".navbar-collapse")
+      span.sr-only Toggle navigation
+      span.icon-bar
+      span.icon-bar
+      span.icon-bar
+    +linkTo(route='home' class='navbar-brand')
+      | MRTorrent

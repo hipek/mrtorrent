@@ -1,0 +1,38 @@
+template(name='folderFilesIndex')
+  h1 Videos
+
+  form(id='folderFilesForm')
+    table.table.table-striped.table-hover
+      thead
+        tr
+          th Name
+          th Player
+          th Sub
+
+      tbody
+        each folderFiles
+          tr
+            td.name
+              if isFile
+                p
+                  = name
+                each subs
+                  small
+                    = name
+              else
+                +linkTo(route='folderFiles' folderId=_id)
+                  = name
+            td.actions
+              if canDownloadSub
+                button(type='submit' class='btn btn-default btn-xs' value=_id data-player-action='start')
+                  span(class='glyphicon glyphicon-play')
+            td.actions
+              if canDownloadSub
+                button(type='submit' class='btn btn-default btn-xs' value=_id data-action='subfetch')
+                  span(class='glyphicon glyphicon-subtitles')
+              else
+                | &nbsp;
+
+  if showBackButton
+    +linkTo(route='folderFiles' folderId=backFolderId)
+      | Back

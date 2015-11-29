@@ -1,0 +1,19 @@
+template(name='navbarRight')
+  ul.nav.navbar-nav.navbar-right
+    if currentUser
+      li
+        span(class='navbar-text')
+          = currentVideoName
+      li
+        button(type='submit' class='btn btn-default navbar-btn' data-player-action='fastBackward')
+          span(class='glyphicon glyphicon-fast-backward')
+        button(type='submit' class='btn btn-default navbar-btn' data-player-action='backward')
+          span(class='glyphicon glyphicon-step-backward')
+        button(type='submit' class='btn btn-default navbar-btn' data-player-action='pause')
+          span(class='glyphicon glyphicon-pause')
+        button(type='submit' class='btn btn-default navbar-btn' data-player-action='stop')
+          span(class='glyphicon glyphicon-stop')
+        button(type='submit' class='btn btn-default navbar-btn' data-player-action='forward')
+          span(class='glyphicon glyphicon-step-forward')
+        button(type='submit' class='btn btn-default navbar-btn' data-player-action='fastForward')
+          span(class='glyphicon glyphicon-fast-forward')

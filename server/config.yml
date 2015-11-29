@@ -1,0 +1,8 @@
+development:
+  path: '/Volumes/MacOSX2/Downloads'
+  dest_dir: '/Volumes/MacOSX2/Torrents'
+  port: 5558
+  host: '192.168.0.10'
+  users:
+  - email: test@test.com
+    password: 9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08

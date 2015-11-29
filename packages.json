@@ -1,0 +1,8 @@
+{
+  "xmlrpc": "https://github.com/hipek/node-xmlrpc/archive/3d6b281d3cc8e1e6d8f70aca52b7cf9d2d31b0f9.tar.gz",
+  "xml2js": "0.4.5",
+  "js-yaml": "3.2.7",
+  "napi-js": "1.1.1",
+  "glob": "5.0.14",
+  "shelljs": "0.5.3"
+}

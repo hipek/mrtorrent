@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<methodResponse>
+  <params>
+    <param>
+      <value>
+        <array>
+          <data>
+            <value>
+              <array>
+                <data>
+                  <value>
+                    <string>Desktop iCalendar</string>
+                  </value>
+                  <value>
+                    <i8>3173195</i8>
+                  </value>
+                  <value>
+                    <i8>1</i8>
+                  </value>
+                </data>
+              </array>
+            </value>
+            <value>
+              <array>
+                <data>
+                  <value>
+                    <string>Flash S01E03 Napisy PL</string>
+                  </value>
+                  <value>
+                    <i8>375206748</i8>
+                  </value>
+                  <value>
+                    <i8>1</i8>
+                  </value>
+                </data>
+              </array>
+            </value>
+          </data>
+        </array>
+      </value>
+    </param>
+  </params>
+</methodResponse>

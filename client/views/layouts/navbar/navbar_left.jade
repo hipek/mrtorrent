@@ -1,0 +1,9 @@
+template(name='navbarLeft')
+  ul.nav.navbar-nav
+    if currentUser
+      li
+        +linkTo(route='torrents')
+          | Torrents
+      li
+        +linkTo(route='folderFiles' folderId=0)
+          | Videos

@@ -1,0 +1,50 @@
+template(name='torrentsIndex')
+  h1 Torrents
+
+  form(id='torrentsForm')
+    div(id='no-more-tables')
+      table.table.table-striped
+        thead
+          tr
+            th
+            th Name
+            th Size
+            th Downloaded
+            th Ratio
+            th Done
+            th Status
+            th Connection
+            th Down/Up
+            th Priority
+            th Time left
+
+        tbody
+          each items
+            tr
+              td(data-title='Select')
+                input(type='checkbox', value=_id)
+              td(data-title='Name').name= name
+              td(data-title='Size')= humanBytes
+              td(data-title='Downloaded')
+                = humanBytesCompleted
+                | /
+                = humanBytesUploaded
+              td(data-title='Ratio')= myRatio
+              td(data-title='Done')= percentComplete
+              td(data-title='Status')= status
+              td(data-title='Connection')= connType
+              td(data-title='Down/Up')
+                = humanDownRate
+                | /
+                = humanUpRate
+              td(data-title='Priority')= prio
+              td(data-title='Time Left')= timeLeft
+
+        tfoot
+          tr
+            td.actions(colspan='12')
+              button(type='submit' class='btn btn-primary btn-xs' value='start') Start
+              button(type='submit' class='btn btn-primary btn-xs' value='stop') Stop
+              button(type='submit' class='btn btn-primary btn-xs' value='erase') Delete
+              button(type='submit' class='btn btn-primary btn-xs') Update
+              a(href='#' id='newTorrent' class='btn btn-primary btn-xs') New torrent

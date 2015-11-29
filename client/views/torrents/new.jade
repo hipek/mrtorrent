@@ -1,0 +1,7 @@
+template(name='torrentsNew')
+  .anti-modal-box
+    .anti-modal-header
+      .anti-modal-title New torrent(s)
+      .anti-modal-closer &times;
+    .anti-modal-body
+      +quickForm collection='Torrents' schema="TorrentsSchema" id='insertTorrentForm'
